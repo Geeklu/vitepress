@@ -38857,7 +38857,10 @@ ${"-".repeat(err.pos)}^`;
 
     //点击事件
     _classPrivateFieldLooseBase(this, _event)[_event]();
-    if (_classPrivateFieldLooseBase(this, _options)[_options].runAway === true) ;
+    if (_classPrivateFieldLooseBase(this, _options)[_options].runAway === true) {
+      //是否立马运行
+      _classPrivateFieldLooseBase(this, _run)[_run]();
+    }
   }
   function _scrollbar2() {
     //插件注册

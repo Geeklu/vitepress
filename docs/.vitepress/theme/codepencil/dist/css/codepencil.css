@@ -1,8 +1,3 @@
-/*!
- * codepencil v0.0.1 (https://github.com/ajiho/codepencil)
- * Copyright 2023-2024 ajiho
- * license MIT(https://github.com/ajiho/codepencil/blob/master/LICENSE)
- */
 @charset "UTF-8";
 .codepencil {
   /*! 
@@ -526,19 +521,19 @@
   display: flex;
 }
 .codepencil .loader {
+  display: grid;
   width: 50px;
   aspect-ratio: 1;
-  display: grid;
   border: 4px solid rgba(0, 0, 0, 0);
-  border-radius: 50%;
   border-right-color: #25b09b;
+  border-radius: 50%;
   animation: l15 1s infinite linear;
 }
 .codepencil .loader::before,
 .codepencil .loader::after {
-  content: "";
   grid-area: 1/1;
   margin: 2px;
+  content: "";
   border: inherit;
   border-radius: 50%;
   animation: l15 2s infinite;
@@ -556,32 +551,30 @@
   /* 宽度 */
   --widht: 2em;
   --height: 1em;
-  margin: 0;
-  margin-right: 3px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   position: relative;
   width: var(--widht);
   height: var(--height);
+  margin: 0;
+  margin-right: 3px;
+  appearance: none;
 }
 .codepencil .switch::before {
-  content: "";
+  position: absolute;
   width: inherit;
   height: inherit;
-  position: absolute;
+  content: "";
   background-color: #808080;
   border-radius: 50em;
 }
 .codepencil .switch::after {
-  content: "";
-  width: var(--height);
-  height: var(--height);
-  border-radius: 50em;
-  background-color: #fff;
   position: absolute;
   top: 0;
   left: 0;
+  width: var(--height);
+  height: var(--height);
+  content: "";
+  background-color: #fff;
+  border-radius: 50em;
   transition: 0.2s linear;
 }
 .codepencil .switch:checked::before {
@@ -638,8 +631,6 @@
   font-size: 16px;
   white-space: nowrap;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
   user-select: none;
   background: transparent;
   border: 0;
