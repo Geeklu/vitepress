@@ -1,4 +1,11 @@
 # 更新日志
+## [1.5.0](https://github.com/Geeklu/vitepress/compare/v1.4.0...v1.5.0) (2024-04-14)
+
+
+### Features
+
+* 更新自动发布到npm的脚本测试husky是否会成功3 ([e0ef03f](https://github.com/Geeklu/vitepress/commit/e0ef03f25ac1d434b2c69b12e570b787234090d8))
+
 ## [1.4.0](https://github.com/Geeklu/vitepress/compare/v1.3.0...v1.4.0) (2024-04-14)
 
 
