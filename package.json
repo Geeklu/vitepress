@@ -7,9 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "prepare": "husky",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "commitlint": "commitlint --config commitlint.config.mjs -e -V"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
+    "conventional-changelog-cli": "^4.1.0",
+    "husky": "^9.0.11",
     "sass": "^1.75.0",
     "vitepress": "^1.1.0",
     "vitepress-plugin-tabs": "^0.5.0"
