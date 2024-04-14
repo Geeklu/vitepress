@@ -10,7 +10,8 @@
     "docs:preview": "vitepress preview docs",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "commitlint": "commitlint --config commitlint.config.mjs -e -V",
-    "release": "commit-and-tag-version"
+    "release": "commit-and-tag-version",
+    "prepare": "node -e \"if (process.env.NODE_ENV !== 'production'){process.exit(1)} \" || husky"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.2.1",
