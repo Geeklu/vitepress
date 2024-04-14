@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.2.0](https://github.com/Geeklu/vitepress/compare/v1.1.0...v1.2.0) (2024-04-14)
+
+
+### Features
+
+* 新增功能d.php ([29c9d24](https://github.com/Geeklu/vitepress/commit/29c9d2491f2b3c1080f6ed3c85f567f602ae9050))
+
 ## 1.1.0 (2024-04-14)
 
 
