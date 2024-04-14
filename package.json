@@ -10,7 +10,7 @@
     "docs:preview": "vitepress preview docs",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "commitlint": "commitlint --config commitlint.config.mjs -e -V",
-    "release": "commit-and-tag-version --header \"adsaa\"",
+    "release": "commit-and-tag-version --header \"# 更新日志\"",
     "prepare": "node .husky/install.mjs",
     "release2": "node build/release.mjs"
   },

@@ -1,3 +1,5 @@
+// 该脚本来自开源项目vitepress
+
 import { readFileSync, writeFileSync } from 'fs'
 import { resolve } from 'path'
 import { fileURLToPath } from 'url'
@@ -71,22 +73,25 @@ async function main() {
   }
 
   // Update the package version.
-  step('\nUpdating the package version...')
+  step('\n正在更新包版本...')
   updatePackage(targetVersion)
 
   // Build the package.
-  step('\nBuilding the package...')
-  await run('pnpm', ['build'])
+  // step('\nBuilding the package...')
+  // await run('pnpm', ['build'])
 
   // Generate the changelog.
-  step('\nGenerating the changelog...')
-  await run('pnpm', ['changelog'])
-  await run('pnpm', ['prettier', '--write', 'CHANGELOG.md'])
+  step('\n生成变更日志...')
+  await run('npm', ['changelog'])
+
+  //美化变更日志
+
+  // await run('pnpm', ['prettier', '--write', 'CHANGELOG.md'])
 
   const { yes: changelogOk } = await prompts({
     type: 'confirm',
     name: 'yes',
-    message: `Changelog generated. Does it look good?`
+    message: `已生成变更日志。它看起来好看吗?`
   })
 
   if (!changelogOk) {
@@ -94,23 +99,24 @@ async function main() {
   }
 
   // Commit changes to the Git and create a tag.
-  step('\nCommitting changes...')
+  step('\n提交更改...')
+
   await run('git', ['add', 'CHANGELOG.md', 'package.json'])
   await run('git', ['commit', '-m', `release: v${targetVersion}`])
   await run('git', ['tag', `v${targetVersion}`])
 
-  // Publish the package.
-  step('\nPublishing the package...')
-  await run('pnpm', [
-    'publish',
-    '--tag',
-    tags[tag],
-    '--ignore-scripts',
-    '--no-git-checks'
-  ])
+  // 发布包到npm
+  // step('\n正在发布包...')
+  // await run('pnpm', [
+  //   'publish',
+  //   '--tag',
+  //   tags[tag],
+  //   '--ignore-scripts',
+  //   '--no-git-checks'
+  // ])
 
   // Push to GitHub.
-  step('\nPushing to GitHub...')
+  step('\n推送至GitHub...')
   await run('git', ['push', 'origin', `refs/tags/v${targetVersion}`])
   await run('git', ['push'])
 }
