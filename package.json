@@ -10,7 +10,7 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "commitlint": "commitlint --config commitlint.config.mjs -e -V",
     "release": "commit-and-tag-version --header \"# 更新日志\" --releaseCommitMessageFormat \"release: {{currentTag}}\"",
-    "prepare": "node .husky/install.mjs",
+    "prepare": "husky",
     "release2": "node build/release.mjs"
   },
   "devDependencies": {
