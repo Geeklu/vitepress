@@ -1,3 +1,16 @@
+## [1.0.10](https://github.com/Geeklu/vitepress/compare/v1.0.11...v1.0.10) (2024-04-14)
+
+
+
+## [1.0.11](https://github.com/Geeklu/vitepress/compare/v1.0.10...v1.0.11) (2024-04-14)
+
+
+### Features
+
+* 增加f功能 ([8498754](https://github.com/Geeklu/vitepress/commit/84987549f3b08bf27f6850e569a32c19deabc31f))
+
+
+
 ## [1.0.10](https://github.com/Geeklu/vitepress/compare/v1.0.9...v1.0.10) (2024-04-14)
 
 
