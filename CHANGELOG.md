@@ -1,4 +1,11 @@
-adsaa
+# 更新日志
+## [1.2.3](https://github.com/Geeklu/vitepress/compare/v1.2.2...v1.2.3) (2024-04-14)
+
+
+### Bug Fixes
+
+* 修复了一些小问题 ([aa86272](https://github.com/Geeklu/vitepress/commit/aa86272a3e2602624fe83098bcab6a59c2a256de))
+
 ## [1.2.2](https://github.com/Geeklu/vitepress/compare/v1.2.0...v1.2.2) (2024-04-14)
 
 ## [1.2.0](https://github.com/Geeklu/vitepress/compare/v1.1.0...v1.2.0) (2024-04-14)
