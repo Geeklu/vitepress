@@ -1,6 +1,15 @@
 ## [1.0.10](https://github.com/Geeklu/vitepress/compare/v1.0.12...v1.0.10) (2024-04-14)
 
 
+### Features
+
+* 新增功能a ([fd587b0](https://github.com/Geeklu/vitepress/commit/fd587b0bfbade2999ce5ef796991a979b6b2b4c9))
+
+
+
+## [1.0.10](https://github.com/Geeklu/vitepress/compare/v1.0.12...v1.0.10) (2024-04-14)
+
+
 
 ## [1.0.10](https://github.com/Geeklu/vitepress/compare/v1.0.11...v1.0.10) (2024-04-14)
 
