@@ -1,4 +1,4 @@
-// 该脚本来自开源项目vitepress
+// 该脚本来自开源项目vitepress,不过也没有尝试过,暂时可以先直接用 
 
 import { readFileSync, writeFileSync } from 'fs'
 import { resolve } from 'path'
