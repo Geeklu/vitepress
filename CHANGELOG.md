@@ -1,3 +1,7 @@
+## [1.0.10](https://github.com/Geeklu/vitepress/compare/v1.0.12...v1.0.10) (2024-04-14)
+
+
+
 ## [1.0.10](https://github.com/Geeklu/vitepress/compare/v1.0.11...v1.0.10) (2024-04-14)
 
 
