@@ -18,3 +18,6 @@ jobs:
       - run: |
           echo ${{ secrets.NPM_TOKEN }}
           echo "shell环境中的变量 : $env_var"
+          echo "直接输出变量 : ${{ vars.MY_VARIABLE }}"
+          echo "环境密钥 : ${{ secrets.NPM_TOKEN2 }}"
+          echo "环境密钥 : ${{ env.NPM_TOKEN2 }}"
