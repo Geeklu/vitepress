@@ -1,4 +1,11 @@
 # 更新日志
+## [1.6.0](https://github.com/Geeklu/vitepress/compare/v1.5.0...v1.6.0) (2024-04-16)
+
+
+### Features
+
+* 增加新的功能B ([3d34fc4](https://github.com/Geeklu/vitepress/commit/3d34fc42439faa2aae25fc61ecac29b2f53665f7))
+
 ## [1.5.0](https://github.com/Geeklu/vitepress/compare/v1.4.0...v1.5.0) (2024-04-14)
 
 
